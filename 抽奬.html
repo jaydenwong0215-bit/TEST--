@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>現金抽奬：年資一年以上</title>
+    
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>🧧 楊枝金撈甜品年終大抽獎 | Golden Mix Year-End Lucky Draw 🧧</title>
+    <style>
+        /* --- 基礎設定 --- */
+        body { 
+            margin: 0; 
+            padding: 20px; 
+            background-color: #fff5eb; /* 暖色背景 */
+            background-image: radial-gradient(#e85a1b 0.5px, transparent 0.5px), radial-gradient(#e85a1b 0.5px, #fff5eb 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", sans-serif; 
+            overflow-x: hidden; 
+            -webkit-tap-highlight-color: transparent; 
+        }
+        
+        .container { 
+            max-width: 600px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 40px 25px; 
+            border-radius: 24px; 
+            box-shadow: 0 10px 40px rgba(232, 90, 27, 0.15); 
+            text-align: center; 
+            border: 4px solid #e85a1b; /* 主題色邊框 */
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* 裝飾角落 */
+        .container::before {
+            content: "✨"; position: absolute; top: 15px; left: 15px; font-size: 24px; opacity: 0.6; color: #f1c40f;
+        }
+        .container::after {
+            content: "✨"; position: absolute; top: 15px; right: 15px; font-size: 24px; opacity: 0.6; color: #f1c40f;
+        }
+        
+        /* 標題區域優化 */
+        .title-area {
+            margin-bottom: 25px;
+            border-bottom: 2px dashed #ffe0cc;
+            padding-bottom: 25px;
+        }
+
+        .company-name {
+            display: block;
+            font-size: clamp(36px, 10vw, 56px); /* 響應式超大字體 */
+            font-weight: 900;
+            color: #e85a1b;
+            letter-spacing: 4px;
+            line-height: 1.2;
+            text-shadow: 
+                3px 3px 0px #ffeaa7,
+                6px 6px 0px rgba(232, 90, 27, 0.1);
+            margin-bottom: 15px;
+        }
+
+        .event-name {
+            display: block;
+            font-size: 28px; /* 稍微加大中文 */
+            color: #d35400;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+        
+        .sub-title {
+            display: block;
+            font-size: 22px; /* 大幅增加英文大小 */
+            margin-top: 8px; 
+            font-weight: 800; /* 加粗 */
+            color: #e85a1b; /* 使用更鮮豔的主題色 */
+            opacity: 1; /* 移除透明度 */
+            letter-spacing: 1.5px;
+            text-transform: uppercase; /* 改為全大寫，更顯眼 */
+            font-family: "Arial Black", "Helvetica Neue", sans-serif;
+        }
+
+        h3 { 
+            color: #d35400; 
+            font-size: 18px; 
+            margin-top: 25px; 
+            margin-bottom: 10px; 
+            text-align: left; 
+            padding-left: 15px; 
+            border-left: 5px solid #e85a1b; 
+            background: linear-gradient(90deg, #fff5eb 0%, transparent 100%);
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        textarea { 
+            width: 90%; 
+            height: 100px; 
+            margin-bottom: 15px; 
+            border: 2px solid #ffe0cc; 
+            border-radius: 16px; 
+            padding: 15px; 
+            font-size: 16px; 
+            resize: none; 
+            background-color: #fffbf7;
+            transition: 0.3s;
+            color: #555;
+        }
+        textarea:focus { 
+            outline: none; 
+            border-color: #e85a1b; 
+            background: #fff; 
+            box-shadow: 0 0 0 4px rgba(232, 90, 27, 0.1);
+        }
+
+        .draw-btn { 
+            background: linear-gradient(135deg, #e85a1b 0%, #d35400 100%); 
+            color: #fff; 
+            border: 2px solid #ffeaa7; /* 金邊 */
+            padding: 20px 40px; 
+            font-size: 26px; 
+            border-radius: 50px; 
+            cursor: pointer; 
+            font-weight: bold; 
+            width: 90%; 
+            box-shadow: 0 8px 15px rgba(232, 90, 27, 0.3); 
+            margin-top: 15px; 
+            -webkit-appearance: none; 
+            transition: transform 0.1s, box-shadow 0.1s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* 按鈕光澤感 */
+        .draw-btn::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 50%;
+            background: linear-gradient(rgba(255,255,255,0.2), transparent);
+            border-radius: 50px 50px 0 0;
+            pointer-events: none;
+        }
+
+        .draw-btn:active { 
+            transform: translateY(3px); 
+            box-shadow: 0 4px 5px rgba(232, 90, 27, 0.2); 
+        }
+        
+        .export-btn { 
+            background: #fff; 
+            color: #e85a1b; 
+            border: 2px solid #e85a1b; 
+            padding: 12px 20px; 
+            font-size: 16px; 
+            border-radius: 12px; 
+            cursor: pointer; 
+            width: 90%; 
+            margin-top: 20px; 
+            font-weight: bold;
+            transition: 0.2s;
+        }
+        .export-btn:active { background: #fff5eb; }
+
+        /* --- 歷史紀錄 --- */
+        #history { margin-top:35px; text-align:left; border-top: 2px dashed #ffcca8; padding-top:25px; }
+        #historyList { list-style: none; padding: 0; margin: 0; max-height: 300px; overflow-y: auto; }
+        .history-item { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            background: #fff; 
+            border: 1px solid #ffe0cc; 
+            border-left: 4px solid #e85a1b;
+            padding: 15px; 
+            margin-bottom: 12px; 
+            border-radius: 12px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+        }
+        .h-info strong { color: #e85a1b; font-size: 18px; }
+        .h-btn { background: #555; color: white; border-radius: 20px; padding: 6px 15px; font-size: 14px; border:none; cursor: pointer; opacity: 0.8;}
+
+        /* --- 震撼全螢幕遮罩 --- */
+        #overlay {
+            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            /* 使用主題色漸層 */
+            background: radial-gradient(circle at center, #e85a1b 0%, #a0300b 100%);
+            display: none; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center;     
+            z-index: 9999; 
+            overflow: hidden;
+        }
+        #overlay.show { display: flex; }
+
+        /* 彈跳動畫 Keyframes */
+        @keyframes popIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            70% { transform: scale(1.1); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .result-container {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* 新增 Congratulations 樣式 */
+        .congrats-text {
+            font-family: 'Arial Black', sans-serif;
+            color: #ffeaa7; /* 淺金色 */
+            font-size: clamp(24px, 6vw, 40px);
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            animation: popIn 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        /* 極致顯眼的獎項文字 */
+        .prize-value { 
+            font-size: clamp(60px, 15vw, 130px); 
+            font-weight: 900; 
+            color: #FFD700; /* 正金色 */
+            margin: 0 0 20px 0;
+            line-height: 1.1;
+            text-shadow: 
+                3px 3px 0px #b86e00, 
+                6px 6px 0px rgba(0,0,0,0.4),
+                0 0 40px rgba(255, 215, 0, 0.5);
+            
+            animation: popIn 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            font-family: "Arial Black", "Heiti TC", sans-serif;
+        }
+        
+        /* 極致顯眼的中獎人 - 預設 (英文/長名適用) */
+        .winner-text { 
+            font-size: clamp(40px, 10vw, 90px); 
+            font-weight: 900; 
+            color: #ffffff;
+            margin: 0; 
+            line-height: 1.2; 
+            word-break: break-word;
+            text-shadow: 
+                0 4px 0 #a0300b, 
+                0 8px 20px rgba(0,0,0,0.5);
+            
+            opacity: 0; 
+            animation: popIn 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            animation-delay: 0.5s; 
+        }
+
+        /* 針對中文名字的特別放大樣式 */
+        .winner-text.is-chinese {
+            font-size: clamp(80px, 25vw, 160px) !important; /* 中文名字特大 */
+        }
+        
+        .winner-label-small {
+            color: rgba(255,255,255,0.9);
+            font-size: 18px;
+            margin-bottom: 5px;
+            letter-spacing: 3px;
+            animation: popIn 1.2s forwards;
+            animation-delay: 0.5s;
+            opacity: 0;
+        }
+
+        .tap-close { 
+            position: absolute; 
+            bottom: 40px; 
+            color: rgba(255,255,255,0.6); 
+            font-size: 14px; 
+            border: 1px solid rgba(255,255,255,0.4); 
+            padding: 10px 30px; 
+            border-radius: 50px; 
+            background: rgba(0,0,0,0.2);
+            z-index: 20;
+            cursor: pointer;
+        }
+
+        /* 慶祝元素 */
+        .confetti { position: absolute; font-size: 30px; pointer-events: none; animation: fall 4s linear forwards; z-index: 5; }
+        @keyframes fall { 
+            0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="title-area">
+        <div class="company-name">楊枝金撈甜品</div>
+        <div class="event-name">🏮 年終大抽獎 🏮</div>
+        <div class="sub-title">GOLDEN MIX YEAR-END LUCKY DRAW</div>
+    </div>
+    <p style="color:#d35400; font-size:14px; font-weight: bold; margin-top: 5px;">🍊 新年進步 · 萬事如意 🍊</p>
+    
+    <h3>1. 參與名單 (<span id="nameCount">0</span> 人)</h3>
+    <textarea id="nameList"></textarea>
+
+    <h3>2. 禮物清單 (<span id="giftCount">0</span> 份)</h3>
+    <textarea id="giftList"></textarea>
+
+    <button class="draw-btn" onclick="startDraw()">🧧 揭曉得獎者 🧧</button>
+    <button class="export-btn" onclick="exportResults()">📊 匯出完整得獎表</button>
+    
+    <div id="history">
+        <ul id="historyList"></ul>
+    </div>
+</div>
+
+<!-- 中獎遮罩 -->
+<div id="overlay" onclick="closeOverlay()">
+    <div class="result-container">
+        <!-- 新增 Congratulations -->
+        <div class="congrats-text">✨ CONGRATULATIONS ✨</div>
+
+        <!-- 獎項 -->
+        <div class="prize-value" id="resGift">MOP 8,888</div>
+        
+        <!-- 裝飾小字 -->
+        <div class="winner-label-small">恭喜幸運兒</div>
+        
+        <!-- 得獎者 -->
+        <div class="winner-text" id="resName">王大明</div>
+    </div>
+    
+    <div class="tap-close">點擊任意處繼續</div>
+</div>
+
+<script>
+    // 預設數據
+    const DEFAULT_NAMES = [
+        "UY ERNESTO JR. ZARATE", "SORIANO AMELYN AUSTRIA", "VILLACERAN ARMANDO ROSADENIO", "黃錦萍", "DE LA CRUZ HAZEL SADJE", 
+        "CAUILAN ARMELYN TUMALIUAN", "GUMPAL HAZEL LUNA", "許培文", "林小芳", "SUYAT JOYCELLE CACAL", 
+        "甘小煉", "黃俊超", "樊嘉欣", "TUMALIUAN AMARCHSON ABANA", "鄧長娣", 
+        "鄭文傑", "MENDOZA LAURA ALDAYA", "BANEZ LARRY CABREROS", "VILLAMAR KING ALDWIN DRACULAN", "姚芳杰", 
+        "RAMIREZ JUDE PATRICK YSULA", "麥柳柳", "LORENZANA LOURENCE JAKE AGLOSOLOS", "MAYANDOC CHRISTIAN ALLEN TORRES", "梁銀萍", 
+        "杜永樂", "TORIO CHERRY MAE BERGANTINOS", "梁凈樂", "梁美珊", "LAYAG DEXTER VELASCO", 
+        "馮建儀", "CHEN JOHN CARLY", "VARGAS JAY KEE MURALLOS", "AGBAYANI JOSEPH CABANLIG", "UY JAMES BANATAO", 
+        "MENDOZA GONZALO JR ALDAYA", "ESCANO JERICHO DIAZ", "許培德", "張玉琼", "蘇曉華", 
+        "曾嘉燕", "伍素珍", "駱立娟", "高玉帆", "姚芳俊", 
+        "許培軍", "LAZARO KRISTINE", "吳惠敏", "ONGSICO RODEL LACESTE", "李金炳", 
+        "梁金紅", "龍慶平", "ULEP JIGJIG JOSAYAN", "歐兆塱", "姚海龍", 
+        "黃建軍", "郭順有", "CORPUZ JAYPEE VISNAR", "GERON JEROM GUMTANG", "李家朗", 
+        "陳鷹揚", "SIMAN JOE-ED LIRIO", "嚴依玲"
+    ];
+    
+    const DEFAULT_GIFTS = [
+        "MOP 1,000", "MOP 1,000", "MOP 1,000", "MOP 4,000", "MOP 1,000", "MOP 4,000", "MOP 1,000", "MOP 1,000", "MOP 1,000", "MOP 1,000",
+        "MOP 1,000", "MOP 1,000", "MOP 1,000", "MOP 1,000", "MOP 1,000", "MOP 1,000", "MOP 1,000", "MOP 1,000", "MOP 1,000", "MOP 1,000",
+        "MOP 2,000", "MOP 1,000", "MOP 1,000", "MOP 1,000", "MOP 5,000", "MOP 2,000", "MOP 3,000", "MOP 1,000", "MOP 1,000", "MOP 1,000",
+        "MOP 1,000", "MOP 1,000", "MOP 1,000", "MOP 1,000", "MOP 5,000", "MOP 1,000", "MOP 3,000", "MOP 1,000", "MOP 2,000", "MOP 1,000",
+        "MOP 2,000", "MOP 1,000", "MOP 3,000", "MOP 1,000", "MOP 1,000", "MOP 1,000", "MOP 1,000", "MOP 1,000", "MOP 1,000", "MOP 1,000",
+        "MOP 1,000", "MOP 1,000", "MOP 1,000", "MOP 1,000", "MOP 1,000", "MOP 1,000", "MOP 2,000", "MOP 1,000", "MOP 4,000", "MOP 3,000",
+        "MOP 1,000", "MOP 1,000", "MOP 1,000"
+    ];
+
+    const nameInput = document.getElementById('nameList');
+    const giftInput = document.getElementById('giftList');
+    const historyList = document.getElementById('historyList');
+    const overlay = document.getElementById('overlay');
+    const resName = document.getElementById('resName');
+    const resGift = document.getElementById('resGift');
+    let winHistory = [];
+    let confettiTimer = null; // 用來控制慶祝動畫的計時器
+
+    window.onload = function() {
+        nameInput.value = DEFAULT_NAMES.join('\n');
+        giftInput.value = DEFAULT_GIFTS.join('\n');
+        updateCounters();
+    };
+
+    nameInput.oninput = updateCounters;
+    giftInput.oninput = updateCounters;
+
+    function updateCounters() {
+        const n = nameInput.value.split('\n').filter(x => x.trim() !== '').length;
+        const g = giftInput.value.split('\n').filter(x => x.trim() !== '').length;
+        document.getElementById('nameCount').innerText = n;
+        document.getElementById('giftCount').innerText = g;
+    }
+
+    // 檢查是否為中文名字
+    function checkNameLanguage(name) {
+        // 簡單判斷：如果包含任何中文字符
+        if (/[\u4e00-\u9fa5]/.test(name)) {
+            resName.classList.add('is-chinese');
+        } else {
+            resName.classList.remove('is-chinese');
+        }
+    }
+
+    function startDraw() {
+        const names = nameInput.value.split('\n').filter(x => x.trim() !== '');
+        const gifts = giftInput.value.split('\n').filter(x => x.trim() !== '');
+
+        if (names.length === 0 || gifts.length === 0) {
+            alert("抽獎結束！名單或禮物已全部抽完。");
+            return;
+        }
+
+        const rIndex = Math.floor(Math.random() * names.length);
+        const winner = names[rIndex];
+        const gift = gifts[0];
+
+        names.splice(rIndex, 1);
+        gifts.shift();
+        nameInput.value = names.join('\n');
+        giftInput.value = gifts.join('\n');
+        updateCounters();
+
+        winHistory.push({ name: winner, gift: gift });
+        const li = document.createElement("li");
+        li.className = "history-item";
+        li.innerHTML = `<div class="h-info"><strong>${winner}</strong><br><span style="color:#888; font-size:14px;">獲得 ${gift}</span></div><button class="h-btn" onclick="reshow('${winner}', '${gift}')">補拍</button>`;
+        historyList.prepend(li);
+
+        // 重置動畫
+        const elements = [resName, resGift, document.querySelector('.congrats-text')];
+        elements.forEach(el => {
+            if(el) {
+                el.style.animation = 'none';
+                el.offsetHeight; 
+                el.style.animation = null; 
+            }
+        });
+
+        // 設定名字並檢查語言
+        resName.innerText = winner;
+        checkNameLanguage(winner);
+
+        resGift.innerText = gift;
+        overlay.classList.add('show');
+        startConfettiLoop(); // 開始不間斷慶祝
+    }
+
+    function reshow(w, g) {
+        resName.innerText = w;
+        checkNameLanguage(w); // 補拍也要檢查語言
+        resGift.innerText = g;
+        
+        // 重置動畫
+        const elements = [resName, resGift, document.querySelector('.winner-label-small'), document.querySelector('.congrats-text')];
+        elements.forEach(el => {
+            if(el) {
+                el.style.animation = 'none';
+                el.offsetHeight; 
+                el.style.animation = ''; 
+            }
+        });
+
+        overlay.classList.add('show');
+        startConfettiLoop(); // 開始不間斷慶祝
+    }
+
+    function closeOverlay() {
+        overlay.classList.remove('show');
+        stopConfettiLoop(); // 停止慶祝
+    }
+
+    // --- 不間斷慶祝控制 ---
+    function startConfettiLoop() {
+        stopConfettiLoop();
+        spawnConfettiBatch(50);
+        confettiTimer = setInterval(() => {
+            spawnConfettiBatch(5);
+        }, 300);
+    }
+
+    function stopConfettiLoop() {
+        if (confettiTimer) {
+            clearInterval(confettiTimer);
+            confettiTimer = null;
+        }
+        const c = document.querySelectorAll('.confetti');
+        c.forEach(x => x.remove());
+    }
+
+    function spawnConfettiBatch(amount) {
+        const items = ['🧧', '💰', '✨', '🏮', '🎊', '🍊'];
+        for (let i = 0; i < amount; i++) {
+            const c = document.createElement('div');
+            c.className = 'confetti';
+            c.innerText = items[Math.floor(Math.random() * items.length)];
+            c.style.left = Math.random() * 95 + 'vw';
+            c.style.fontSize = (Math.random() * 30 + 20) + 'px';
+            c.style.animationDuration = (Math.random() * 3 + 3) + 's'; 
+            c.style.top = "-60px";
+            c.onanimationend = () => { c.remove(); };
+            overlay.appendChild(c);
+        }
+    }
+
+    function exportResults() {
+        if (winHistory.length === 0) return;
+        let txt = "🧧 楊枝金撈年終抽獎得獎名單 🧧\n" + winHistory.map((h, i) => `${i+1}. ${h.name} - ${h.gift}`).join("\n");
+        alert(txt);
+    }
+</script>
+</body>
+</html>
+    
+  </body>
+  
+</html>
